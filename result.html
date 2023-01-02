@@ -10,38 +10,124 @@
 </head>
 
 <body>
-    <div class="result-box">
-        <div class="result-content">
-            <h3>
-                Đây là kiểu người nổi nhất của bạn:
-            </h3>
-            <div class="result-content__point">
-                <span class="point-content">Tổng điểm:</span>
-                <span class="point">666</span>
-            </div>
-        </div>
-        <div class="result">
-            <h3>
-                Kiểu người
-            </h3>
-            <span class="f-result-content">R</span>
-            <span class="name-result">(Realistic - kỹ thuật)</span>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit iure nisi, ipsa temporibus eligendi,
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit iure nisi, ipsa temporibus eligendi,
-                perspiciatis nobis corporis veniam mollitia fugiat iste voluptas veritatis, molestiae error. A, vel
-                iure. Delectus, aliquam?
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit iure nisi, ipsa temporibus eligendi,
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit iure nisi, ipsa temporibus eligendi,
-                perspiciatis nobis corporis veniam mollitia fugiat iste voluptas veritatis, molestiae error. A, vel
-                iure. Delectus, aliquam?
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit iure nisi, ipsa temporibus eligendi,
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit iure nisi, ipsa temporibus eligendi,
-                perspiciatis nobis corporis veniam mollitia fugiat iste voluptas veritatis, molestiae error. A, vel
-                iure. Delectus, aliquam?
-            </p>
+    <div class="consultings" id="popup">
+        <button class="btn-close" onclick="ClosePopup()"> &times;</button>
+        <div class="consultings-content">
+            <h2>Vui lòng điền thông tin để được hỗ trợ tư vấn!</h2>
+            <form action="">
+                <div class="consulting">
+                    <div class="point-consulting input-group">
+                        <label for="point" class="input-group-text">
+                            Điểm thi:
+                        </label>
+                        <input class="group-input" type="text" id="point" placeholder="Nhập điểm thi">
+                    </div>
+                    <div class="block-consulting input-group">
+                        <label for="block" class="input-group-text">
+                            Khối thi:
+                        </label>
+                        <input class="group-input" type="text" id="block" placeholder="Chọn tổ hợp thi">
+                    </div>
+                    <div class="branch-consulting input-group">
+                        <label for="branch" class="input-group-text">
+                            Ngành:
+                        </label>
+                        <input class="group-input" type="text" id="branch" placeholder="Chọn ngành">
+                    </div>
+                </div>
+                <button type="submit" class="btn ">Tìm kiếm thông tin</button>
+            </form>
         </div>
     </div>
-</body>
 
+
+
+
+
+
+
+    <div class="results">
+        <div class="result-box">
+            <div class="result-content">
+                <h3>
+                    Đây là kiểu người nổi nhất của bạn:
+                </h3>
+                <div class="result-content__point">
+                    <span class="point-content">Tổng điểm:</span>
+                    <span class="point">666</span>
+                </div>
+            </div>
+            <div class="result">
+                <h3>
+                    Kiểu người
+                </h3>
+                <div class="f-result-content">R</div>
+                <div class="name-result">(Realistic - kỹ thuật)</div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit iure nisi, ipsa temporibus
+                    eligendi,
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit iure nisi, ipsa temporibus
+                    eligendi,
+                    perspiciatis nobis corporis veniam mollitia fugiat iste voluptas veritatis, molestiae error. A, vel
+                    iure. Delectus, aliquam?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit iure nisi, ipsa temporibus
+                    eligendi,
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit iure nisi, ipsa temporibus
+                    eligendi,
+                    perspiciatis nobis corporis veniam mollitia fugiat iste voluptas veritatis, molestiae error. A, vel
+                    iure. Delectus, aliquam?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit iure nisi, ipsa temporibus
+                    eligendi,
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit iure nisi, ipsa temporibus
+                    eligendi,
+                    perspiciatis nobis corporis veniam mollitia fugiat iste voluptas veritatis, molestiae error. A, vel
+                    iure. Delectus, aliquam?
+                </p>
+                <br>
+                <h4 class="refer-title">Những ngành nghề nên ưu tiên tham khảo trước:</h4>
+                <div class="list-jobs">
+                    <ul>
+                        <li><a href="#" data-toggle="modal"> Cơ khí & Xây dựng</a> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Cum,
+                            vero quos mollitia quo ipsa quas doloremque voluptatibus unde laborum dolore provident amet.
+                            Possimus distinctio architecto ipsum reiciendis labore officia voluptate. </li>
+                        <li><a href="#" data-toggle="modal">Quân sự</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, vero
+                            quos
+                            mollitia quo ipsa quas doloremque voluptatibus unde laborum dolore provident amet. Possimus
+                            distinctio architecto ipsum reiciendis labore officia voluptate. </li>
+                        <li><a href="#" data-toggle="modal">Điện,Điện tử</a> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+                            vero
+                            quos mollitia quo ipsa quas doloremque voluptatibus unde laborum dolore provident amet.
+                            Possimus
+                            distinctio architecto ipsum reiciendis labore officia voluptate. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="result-job--box">
+            <div class="result-job">
+                <h2 class="title">
+                    Kết quả tìm kiếm thuộc nhóm ngành này
+                </h2>
+                <div class="result-content">
+                    <div class="job">
+                        <a href="#" data-toggle="modal">1.Bác sĩ Y đa khoa</a>
+                        <a href="#">Xem chi tiết</a>
+                    </div>
+                    <div class="job">
+                        <a href="#" data-toggle="modal">2.Bác sĩ Y đa khoa</a>
+                        <a href="#">Xem chi tiết</a>
+                    </div>
+                    <div class="job">
+                        <a href="#" data-toggle="modal">3.Bác sĩ Y đa khoa</a>
+                        <a href="#">Xem chi tiết</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/result.js"></script>
 </html>
